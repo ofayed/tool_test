@@ -60,24 +60,5 @@ test = sys.argv[0]
 print(test)
     
 
-if __name__ == "__main__":
-    today_date = date.today()
-    print(today_date)
-
-
-    local_directory = "/transfer/s5708799/"+ str(today_date) 
-    remote_path = "/Backup/" 
-    rclone_remote = "project" 
-    remote_file_path = f"{remote_path}/{str(today_date)}" 
-    try:
-            subprocess.run(
-                ["/home/s5708799/Downloads/rclone/rclone", "copyto", local_directory, f"{rclone_remote}:{remote_file_path}"],
-                env=os.environ,
-                check=True
-            )
-            print(f"Uploaded: {local_directory}")
-    except subprocess.CalledProcessError as e:
-        print(f"Error uploading {local_directory}: {e}")
-
 
     
