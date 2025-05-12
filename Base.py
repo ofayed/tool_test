@@ -56,9 +56,3 @@ def check_for_changes(files_to_upload, remote_path, rclone_remote):
         print(f"An error occurred: {e}")
 
 
-test = sys.argv[0]
-print(test)
-    
-
-
-    
