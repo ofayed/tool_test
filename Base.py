@@ -6,7 +6,7 @@ from datetime import datetime ,date
 import sys
 
 
-password = 
+password = "testPAss"
 
 os.environ["RCLONE_CONFIG_PASS"] = password
 
