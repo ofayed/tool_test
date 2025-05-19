@@ -1,3 +1,2 @@
 float @pscale = 0;
 float n;
-float x = 0;
